@@ -1,0 +1,63 @@
+paths:
+  /api/users:
+    get:
+      tags:
+        - User
+      summary: List GitHub users and the link for the next page.
+      produces:
+        - application/json
+      parameters:
+        - in: query
+          name: since
+          type: number
+          required: true
+          description: Search users with ID after this number.
+      responses:
+        200:
+          description: Return users data.
+        400:
+          description: Internal server error.
+        404:
+          description: Users not found.
+
+  /api/users/{username}/details:
+    get:
+      tags:
+        - User
+      summary: Find github user details.
+      produces:
+        - application/json
+      parameters:
+        - in: path
+          name: username
+          type: string
+          required: true
+          description: GitHub username.
+      responses:
+        200:
+          description: Return user data.
+        400:
+          description: Internal server error.
+        404:
+          description: User not found.
+
+  /api/users/{username}/repos:
+    get:
+      tags:
+        - User
+      summary: Find github user repos.
+      produces:
+        - application/json
+      parameters:
+        - in: path
+          name: username
+          type: string
+          required: true
+          description: GitHub username.
+      responses:
+        200:
+          description: Return user repos data.
+        400:
+          description: Internal server error.
+        404:
+          description: User not found.

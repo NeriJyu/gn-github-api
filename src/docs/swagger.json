@@ -1,0 +1,21 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Documentation gn-github-api",
+    "description": "Back-End",
+    "version": "1.0.0",
+    "contact": {
+      "email": "gustavoneri20@hotmail.com"
+    }
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000",
+      "description": "Development server"
+    },
+    {
+      "url": "https://api-project-gustavo.onrender.com",
+      "description": "Production server"
+    }
+  ]
+}
