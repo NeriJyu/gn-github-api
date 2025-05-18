@@ -1,18 +1,18 @@
-# project-gustavo
+# 🐙 GitHub API
 
-[Production link](https://api-project-gustavo.onrender.com)
+[Production link](https://api-project-gustavo.onrender.com) 🔗
 
-## Run
+## Run ▶️
 
-```
+```bash
 cp .env.example .env
 npm install
 npm run dev
 ```
 
-## Test
+## Test ✅
 
-```
+```bash
 cp .env.example .env
 npm test
 ```
